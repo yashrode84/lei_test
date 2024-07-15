@@ -1,0 +1,17 @@
+lei_module.update_form:
+  path: '/node/{node}/update'
+  defaults:
+    _controller: '\Drupal\lei_module\Controller\LeiModuleController::updateForm'
+    _title: 'Update Application'
+  requirements:
+    _permission: 'access content'
+    _access: 'TRUE'
+
+lei_module.details_page:
+  path: 'node/{node}/details'
+  defaults:
+    _controller: '\Drupal\lei_module\Controller\LeiModuleController::detailsPage'
+    _title: 'LEI Reference Details'
+  requirements:
+    _permission: 'access content'
+    _access: 'TRUE'

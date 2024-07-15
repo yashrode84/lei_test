@@ -1,0 +1,8 @@
+name: 'LEI Module'
+type: module
+description: 'Custom module for LEI data updation.'
+core_version_requirement: ^9 || ^10
+package: Custom
+dependencies:
+  - node
+  - datetime
